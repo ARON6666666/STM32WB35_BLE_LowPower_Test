@@ -1,0 +1,532 @@
+{
+  "name": "STM32WBx5_Lowpower_Evaluate",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "Startup",
+        "files": [
+          {
+            "path": "../STM32WBx5_HAL_Drivers/CMSIS/Device/ST/STM32WBxx/Source/Templates/arm/startup_stm32wb35xx_cm4.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "User",
+        "files": [
+          {
+            "path": "../Application/Src/app_debug.c"
+          },
+          {
+            "path": "../Application/Src/app_entry.c"
+          },
+          {
+            "path": "../Application/Src/hw_timerserver.c"
+          },
+          {
+            "path": "../Application/Src/hw_uart.c"
+          },
+          {
+            "path": "../Application/Src/main.c"
+          },
+          {
+            "path": "../Application/Src/stm32_lpm_if.c"
+          },
+          {
+            "path": "../Application/Src/stm32wbxx_hal_msp.c"
+          },
+          {
+            "path": "../Application/Src/stm32wbxx_it.c"
+          }
+        ],
+        "folders": [
+          {
+            "name": "STM32_WPAN",
+            "files": [],
+            "folders": [
+              {
+                "name": "App",
+                "files": [
+                  {
+                    "path": "../STM32_WPAN/App/app_ble.c"
+                  },
+                  {
+                    "path": "../STM32_WPAN/App/dis_app.c"
+                  },
+                  {
+                    "path": "../STM32_WPAN/App/hrs_app.c"
+                  }
+                ],
+                "folders": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "STM32_WPAN",
+        "files": [],
+        "folders": [
+          {
+            "name": "Target",
+            "files": [
+              {
+                "path": "../STM32_WPAN/Target/hw_ipcc.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Driver",
+        "files": [],
+        "folders": [
+          {
+            "name": "BSP",
+            "files": [
+              {
+                "path": "../BSP/stm32wbxx_nucleo.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "CMSIS",
+        "files": [
+          {
+            "path": "../STM32WBx5_HAL_Drivers/CMSIS/Device/ST/STM32WBxx/Source/Templates/system_stm32wbxx.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "HAL_Drivers",
+        "files": [
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_adc.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_adc_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_comp.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_crc.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_crc_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cryp.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cryp_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_i2c.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_i2c_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_irda.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_iwdg.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_lcd.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_lptim.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pka.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_qspi.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rng.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_spi_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_usart.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_usart_ex.c"
+          },
+          {
+            "path": "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_wwdg.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Middleware",
+        "files": [],
+        "folders": [
+          {
+            "name": "STM32_WPAN",
+            "files": [
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl_if.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl_if.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/utilities/dbg_trace.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/utilities/otp.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/utilities/stm_list.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/utilities/stm_queue.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/core/template/osal.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/svc/Src/svc_ctl.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/svc/Src/dis.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/svc/Src/hrs.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gatt_aci.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hal_aci.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Utilities",
+        "files": [
+          {
+            "path": "../Utilities/lpm/tiny_lpm/stm32_lpm.c"
+          },
+          {
+            "path": "../Utilities/sequencer/stm32_seq.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "::CMSIS",
+        "files": [],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "b1faa171f254c51bd2d8276f53246c9f"
+  },
+  "targets": {
+    "Target 1": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "../STM32WBx5_HAL_Drivers/CMSIS/Device/ST/STM32WBxx/Source/Templates/arm/linker/stm32wb35xx_flash_cm4.sct",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x8000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x80000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../Application/Inc",
+          "../STM32_WPAN/App",
+          "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Inc",
+          "../STM32WBx5_HAL_Drivers/STM32WBxx_HAL_Driver/Inc/Legacy",
+          "../Middlewares/ST/STM32_WPAN",
+          "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread",
+          "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl",
+          "../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci",
+          "../Middlewares/ST/STM32_WPAN/utilities",
+          "../Utilities/lpm/tiny_lpm",
+          "../Utilities/sequencer",
+          "../Middlewares/ST/STM32_WPAN/ble",
+          "../Middlewares/ST/STM32_WPAN/ble/core/template",
+          "../Middlewares/ST/STM32_WPAN/ble/core",
+          "../STM32WBx5_HAL_Drivers/CMSIS/Device/ST/STM32WBxx/Include",
+          "../STM32WBx5_HAL_Drivers/CMSIS/Include",
+          "../BSP",
+          ".cmsis/include",
+          "../MDK/RTE/_Target 1"
+        ],
+        "libList": [],
+        "defineList": [
+          "USE_STM32WBXX_NUCLEO",
+          "USE_HAL_DRIVER",
+          "STM32WB35xx"
+        ]
+      },
+      "builderOptions": {
+        "AC6": {
+          "version": 3,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "use-microLIB": false,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-0",
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "link-time-optimization": false,
+            "one-elf-section-per-function": true,
+            "short-enums#wchar": true,
+            "warnings": "ac5-like-warnings"
+          },
+          "asm-compiler": {
+            "$use": "asm-auto"
+          },
+          "linker": {
+            "output-format": "elf",
+            "misc-controls": "--diag_suppress=L6329",
+            "xo-base": "",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}
