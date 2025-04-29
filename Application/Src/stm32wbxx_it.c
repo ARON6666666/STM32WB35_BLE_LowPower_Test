@@ -219,6 +219,22 @@ void RTC_WKUP_IRQHandler(void)
   /* USER CODE END RTC_WKUP_IRQn 1 */
 }
 
+
+/**
+  * @brief This function handles DMA1 channel4 global interrupt.
+  */
+void DMA1_Channel1_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA1_Channel4_IRQn 0 */
+
+  /* USER CODE END DMA1_Channel4_IRQn 0 */
+	extern DMA_HandleTypeDef hdma_quadspi;
+  HAL_DMA_IRQHandler(&hdma_quadspi);
+  /* USER CODE BEGIN DMA1_Channel4_IRQn 1 */
+
+  /* USER CODE END DMA1_Channel4_IRQn 1 */
+}
+
 /**
   * @brief This function handles DMA1 channel4 global interrupt.
   */
@@ -231,6 +247,18 @@ void DMA1_Channel4_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Channel4_IRQn 1 */
 
   /* USER CODE END DMA1_Channel4_IRQn 1 */
+}
+
+
+/**
+  * @brief  This function handles QUADSPI Interrupt Handler.
+  * @param  None
+  * @retval None
+  */
+void QUADSPI_IRQHandler(void)
+{
+  extern QSPI_HandleTypeDef hqspi;
+  HAL_QSPI_IRQHandler(&hqspi);
 }
 
 /**

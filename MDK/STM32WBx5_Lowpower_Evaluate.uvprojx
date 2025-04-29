@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STM32WBXX_NUCLEO,USE_HAL_DRIVER,STM32WB35xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Application\Inc;..\STM32_WPAN\App;..\STM32WBx5_HAL_Drivers\STM32WBxx_HAL_Driver\Inc;..\STM32WBx5_HAL_Drivers\STM32WBxx_HAL_Driver\Inc\Legacy;..\Middlewares\ST\STM32_WPAN;..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread;..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl;..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci;..\Middlewares\ST\STM32_WPAN\utilities;..\Utilities\lpm\tiny_lpm;..\Utilities\sequencer;..\Middlewares\ST\STM32_WPAN\ble;..\Middlewares\ST\STM32_WPAN\ble\core\template;..\Middlewares\ST\STM32_WPAN\ble\core;..\STM32WBx5_HAL_Drivers\CMSIS\Device\ST\STM32WBxx\Include;..\STM32WBx5_HAL_Drivers\CMSIS\Include;..\BSP</IncludePath>
+              <IncludePath>..\Application\Inc;..\STM32_WPAN\App;..\STM32WBx5_HAL_Drivers\STM32WBxx_HAL_Driver\Inc;..\STM32WBx5_HAL_Drivers\STM32WBxx_HAL_Driver\Inc\Legacy;..\Middlewares\ST\STM32_WPAN;..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread;..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl;..\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci;..\Middlewares\ST\STM32_WPAN\utilities;..\Utilities\lpm\tiny_lpm;..\Utilities\sequencer;..\Middlewares\ST\STM32_WPAN\ble;..\Middlewares\ST\STM32_WPAN\ble\core\template;..\Middlewares\ST\STM32_WPAN\ble\core;..\STM32WBx5_HAL_Drivers\CMSIS\Device\ST\STM32WBxx\Include;..\STM32WBx5_HAL_Drivers\CMSIS\Include;..\BSP;..\Hardware\nand_flash\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -472,6 +472,26 @@
               <FileName>stm32wbxx_nucleo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\stm32wbxx_nucleo.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32wbxx_cml_qspi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\stm32wbxx_cml_qspi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32wbxx_cml_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\stm32wbxx_cml_dma.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Driver/Hardware</GroupName>
+          <Files>
+            <File>
+              <FileName>nand_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\nand_flash\Src\nand_flash.c</FilePath>
             </File>
           </Files>
         </Group>

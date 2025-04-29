@@ -92,6 +92,21 @@
             "files": [
               {
                 "path": "../BSP/stm32wbxx_nucleo.c"
+              },
+              {
+                "path": "../BSP/stm32wbxx_cml_dma.c"
+              },
+              {
+                "path": "../BSP/stm32wbxx_cml_qspi.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "Hardware",
+            "files": [
+              {
+                "path": "../Hardware/nand_flash/Src/nand_flash.c"
               }
             ],
             "folders": []
@@ -487,7 +502,8 @@
           "../STM32WBx5_HAL_Drivers/CMSIS/Include",
           "../BSP",
           ".cmsis/include",
-          "../MDK/RTE/_Target 1"
+          "../MDK/RTE/_Target 1",
+          "../Hardware/nand_flash/Inc"
         ],
         "libList": [],
         "defineList": [

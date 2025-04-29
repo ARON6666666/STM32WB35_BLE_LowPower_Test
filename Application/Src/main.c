@@ -42,7 +42,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "nand_flash.h"
+#include "stm32wbxx_cml_qspi.h"
+#include "stm32wbxx_cml_dma.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -136,7 +138,9 @@ int main(void)
 //  MX_RNG_Init();
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
-
+	CML_QSPI_InitCfg(0, 24, QSPI_CLOCK_MODE_0);
+	extern QSPI_HandleTypeDef hqspi;
+	CML_DMA_QSPI_Init(&hqspi, DMA1);
   /* USER CODE END 2 */
 
   /* Init code for STM32_WPAN */
@@ -144,6 +148,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  nand_flash_initialize();
   while(1)
   {
     /* USER CODE END WHILE */
